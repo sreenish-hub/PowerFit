@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: Manrope, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(182, 255, 0, 0.25);
+}
+
+.glow-ring {
+  box-shadow: 0 0 0 1px rgba(182, 255, 0, 0.35),
+    0 0 30px rgba(182, 255, 0, 0.12);
+}
+
+.soft-shadow {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+select {
+  color: rgba(255, 255, 255, 0.8);
+}
